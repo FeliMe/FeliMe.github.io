@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://felix-meissen.github.io/sitemap.xml

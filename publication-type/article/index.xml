@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>article | Felix Meissen</title>
+    <link>https://felix-meissen.github.io/publication-type/article/</link>
+      <atom:link href="https://felix-meissen.github.io/publication-type/article/index.xml" rel="self" type="application/rss+xml" />
+    <description>article</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://felix-meissen.github.io/media/icon_hu7bffbf03943c896d131b40405a9c5e1a_301314_512x512_fill_lanczos_center_3.png</url>
+      <title>article</title>
+      <link>https://felix-meissen.github.io/publication-type/article/</link>
+    </image>
+    
+    <item>
+      <title>(Predictable) Performance Bias in Unsupervised Anomaly Detection</title>
+      <link>https://felix-meissen.github.io/publication/fairness/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://felix-meissen.github.io/publication/fairness/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
+&lt;p&gt;With the ever-increasing amount of medical imaging data, the demand for algorithms to assist clinicians has amplified. Unsupervised anomaly detection (UAD) models promise to aid in the crucial first step of disease detection. While previous studies have thoroughly explored fairness in supervised models in healthcare, for UAD, this has so far been unexplored.&lt;/p&gt;
+&lt;h3 id=&#34;methods&#34;&gt;Methods&lt;/h3&gt;
+&lt;p&gt;In this study, we evaluated how dataset composition regarding subgroups manifests in disparate performance of UAD models along multiple protected variables on three large-scale publicly available chest X-ray datasets. Our experiments were validated using two state-of-the-art UAD models for medical images. Finally, we introduced a novel subgroup-AUROC (sAUROC) metric, which aids in quantifying fairness in machine learning.&lt;/p&gt;
+&lt;h3 id=&#34;findings&#34;&gt;Findings&lt;/h3&gt;
+&lt;p&gt;Our experiments revealed empirical &amp;ldquo;fairness laws&amp;rdquo; (similar to &amp;ldquo;scaling laws&amp;rdquo; for Transformers) for training-dataset composition: Linear relationships between anomaly detection performance within a subpopulation and its representation in the training data. Our study further revealed performance disparities, even in the case of balanced training data, and compound effects that exacerbate the drop in performance for subjects associated with multiple adversely affected groups.&lt;/p&gt;
+&lt;h3 id=&#34;interpretation&#34;&gt;Interpretation&lt;/h3&gt;
+&lt;p&gt;Our study quantified the disparate performance of UAD models against certain demographic subgroups. Importantly, we showed that this unfairness cannot be mitigated by balanced representation alone. Instead, the representation of some subgroups seems harder to learn by UAD models than that of others. The empirical fairness laws discovered in our study make disparate performance in UAD models easier to estimate and aid in determining the most desirable dataset composition.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./assets/main_results.jpg&#34; alt=&#34;Fairness laws in unsupervised anomaly detection&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fig. 3:&lt;/strong&gt; &lt;em&gt;a) A linear relationship between the representation of a subgroup in the training dataset and its performance was observed across all datasets and subgroups. Equal representation of subgroups did not produce the most group-fair results. Experimental results for the FAE on the MIMIC-CXR, CXR14, and CheXpert datasets trained under different gender, age, or race imbalance ratios. Each box extends from the lower to upper quartile values of ten runs with different random seeds with a line at the median. Regression lines along the different imbalance ratios are additionally plotted. The exact numbers can be found in the Appendix. b) The mean absolute errors (MAE) between the real subgroup performances and those estimated using the “fairness laws” for each dataset and protected variable. Each box again shows the results over ten runs with different random seeds.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
